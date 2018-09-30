@@ -1,0 +1,29 @@
+1、初始化yarn
+yarn init
+
+2、安装babel
+yarn add bable-cli babel-preset-react babel-preset-env babel-polyfill babel-loader@7.1.5 babel-core
+
+安装 babel plugins
+yarn add babel-plugin-transform-class-properties babel-plugin-transform-object-rest-spread
+
+设置.babelrc
+
+3、安装react
+yarn add react react-dom react-redux react-router-dom
+
+4、安装webpack
+yarn add webpack webpack-cli webpack-dev-server
+
+webpack css
+yarn add style-loader css-loader sass-loader node-sass
+
+webpack plugins
+yarn add extract-text-webpack-plugin@next
+
+5、安装jest 测试相关
+yarn add --dev jest
+
+配置webpack.config.js
+配置package.json 里的scripts
+配置.gitignore
