@@ -5,7 +5,7 @@ yarn init
 yarn add bable-cli babel-preset-react babel-preset-env babel-polyfill babel-loader@7.1.5 babel-core
 
 安装 babel plugins
-yarn add babel-plugin-transform-class-properties babel-plugin-transform-object-rest-spread
+yarn add babel-plugin-transform-class-properties babel-plugin-transform-object-rest-spread babel-plugin-import
 
 设置.babelrc
 
@@ -16,13 +16,16 @@ yarn add react react-dom react-redux react-router-dom
 yarn add webpack webpack-cli webpack-dev-server
 
 webpack css
-yarn add style-loader css-loader sass-loader node-sass
+yarn add style-loader css-loader sass-loader node-sass less-loader less
 
 webpack plugins
 yarn add extract-text-webpack-plugin@next
 
 5、安装jest 测试相关
 yarn add --dev jest
+
+6、安装UI框架
+yarn add antd
 
 配置webpack.config.js
 配置package.json 里的scripts
