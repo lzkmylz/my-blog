@@ -27,6 +27,9 @@ yarn add --dev jest
 6、安装UI框架
 yarn add antd
 
+7、代码风格
+yarn add eslint eslint-loader eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import
+
 配置webpack.config.js
 配置package.json 里的scripts
 配置.gitignore

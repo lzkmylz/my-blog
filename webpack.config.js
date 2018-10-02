@@ -16,7 +16,10 @@ module.exports = (env) => {
     mode: 'development',
     module: {
       rules: [{
-        'loader': 'babel-loader',
+        'use': [
+          'babel-loader',
+          'eslint-loader'
+        ],
         'test': /\.js$/,
         'exclude': /node_modules/
       },{
