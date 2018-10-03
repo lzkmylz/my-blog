@@ -20,7 +20,7 @@ module.exports = (env) => {
           'babel-loader',
           'eslint-loader'
         ],
-        'test': /\.js$/,
+        'test': /\.jsx?$/,
         'exclude': /node_modules/
       },{
         'test': /\.s?css$/,
@@ -48,6 +48,9 @@ module.exports = (env) => {
           options: { javascriptEnabled: true }
         }]
       }]
+    },
+    resolve: {
+      extensions: ['.js', '.jsx', '.json', '.scss']
     },
     plugins: [
       CSSExtract
