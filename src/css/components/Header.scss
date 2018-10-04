@@ -1,0 +1,25 @@
+.headerBox {
+  background: #24292e;
+  display: flex;
+  height: 50px;
+  padding: 12px 0;
+  width: 100vw;
+  
+}
+
+.headerBoxItem {
+  flex: 1;
+  color: white;
+}
+
+.headerLeftContext {
+  @extend .headerBoxItem;
+}
+
+.headerCenterContext {
+  @extend .headerBoxItem;
+}
+
+.headerRightContext {
+  @extend .headerBoxItem;
+}
