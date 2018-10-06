@@ -1,11 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <div className="headerBox">
     <div className="headerLeftContext">
-      <ul>
-        <li>博文</li>
-      </ul>
+      <div className="headerSearchLogoBox">
+        <img
+          className="headerSearchLogoImg"
+          src="/images/headerSearchLogo.jpg"
+          alt="Header logo"
+        />
+      </div>
+      <div className="headerSearchBox">
+        <input
+          type="text"
+          className="headerSearchInput"
+          placeholder="Search"
+        />
+      </div>
     </div>
     <div className="headerCenterContext">
       <div className="centerBox">
@@ -19,7 +31,10 @@ const Header = () => (
     </div>
     <div className="headerRightContext">
       <ul>
-        <li>小游戏</li>
+        <li><Link className="headerLink" to="/games">博文</Link></li>
+        <li><Link className="headerLink" to="/articles">小游戏</Link></li>
+        <li><Link className="headerLink" to="/photos">照片</Link></li>
+        <li><Link className="headerLink" to="/git">Github</Link></li>
       </ul>
     </div>
   </div>
