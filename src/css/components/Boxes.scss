@@ -1,4 +1,4 @@
-.centerBox {
+.two-col-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,11 +7,11 @@
   p {
     margin-bottom: 0;
   }
-  .topCenterBox {
+  .top-box {
     height: 20px;
     font-size: 16px;
   }
-  .topBottomBox {
+  .bottom-box {
     height: 14px;
     font-size: 12px;
   }
