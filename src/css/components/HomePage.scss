@@ -1,24 +1,29 @@
 .homepage-box {
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  height: calc(100% - 50px);
+  width: 100%;
   background: #323232;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+}
+
+.homepage-context-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homepage-photo-box {
+  text-align: center;
 }
 
 .homepage-text-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: white;
+  text-align: center;
 
   .homepage-text-name {
+    //text-align: center;
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 0;
   }
-
-  
 }

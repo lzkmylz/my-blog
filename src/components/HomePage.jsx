@@ -8,7 +8,7 @@ const HomePage = () => (
       </div>
       <div className="homepage-text-box">
         <p className="homepage-text-name">lzkmylz</p>
-        <p>程序猿/快乐肥宅/单身狗</p>
+        <p className="homepage-text-label">程序猿/快乐肥宅/单身狗</p>
       </div>
     </div>
   </div>
