@@ -16,3 +16,16 @@
     font-size: 12px;
   }
 }
+
+.three-row-box {
+  background: $Pantone;
+  display: flex;
+  height: 50px;
+  padding: 12px 0;
+  width: 100%;
+
+  .three-row-box-singlerow {
+    flex: 1;
+    color: white;
+  }
+}

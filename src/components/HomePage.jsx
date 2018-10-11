@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HomePage = () => (
-  <div className="homepage-box">
+  <div className="page-container">
     <div className="homepage-context-box">
       <div className="homepage-photo-box">
         <img src="/images/lzkmylz.jpg" alt="mine" />

@@ -1,6 +1,8 @@
-@import './base/base.scss';
-@import './base/settings.scss';
+@import './base/Base';
+@import './base/Settings';
 
-@import './components/Header.scss';
-@import './components/Boxes.scss';
-@import './components//HomePage.scss';
+@import './components/Header';
+@import './components/Boxes';
+@import './components//HomePage';
+@import './components/page_container';
+@import './components/Search_input';
