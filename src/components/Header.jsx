@@ -1,22 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Input } from 'antd';
 
 const Header = () => (
   <div className="three-row-box">
     <div className="header-left-context">
       <div className="search-box">
         <div className="image-container">
-          <img
-            className="search-logo"
-            src="/images/headerSearchLogo.jpg"
-            alt="search-logo"
-          />
+          <Link to="/">
+            <img
+              className="search-logo"
+              src="/images/headerSearchLogo.jpg"
+              alt="search-logo"
+            />
+          </Link>
         </div>
         <div className="search-input-container">
-          <input
+          <Input
             type="text"
             className="search-input"
-            placeholder="Search"
+            placeholder="Articles/Games/..."
+            size="default"
           />
         </div>
       </div>

@@ -2,8 +2,8 @@
   display: flex;
 
   .image-container {
-    height: 25px;
-    width: 25px;
+    height: 32px;
+    width: 32px;
     margin-left: 40px;
 
     .search-logo {
@@ -26,5 +26,9 @@
       padding-left: 8px;
       width: 100%;
     }  
+    .search-input:focus {
+      background: white;
+      color: black;
+    }
   }
 }
