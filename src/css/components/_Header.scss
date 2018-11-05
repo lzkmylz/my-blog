@@ -1,12 +1,20 @@
 .header-left-context {
   @extend .three-row-box-singlerow;
-  @extend .search-input-container;
   display: flex;
   //flex-direction: row;
 }
 
 .header-center-context {
   @extend .three-row-box-singlerow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .header-right-context {
@@ -25,6 +33,6 @@
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
   }
 }

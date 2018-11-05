@@ -4,29 +4,26 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <div className="three-row-box">
     <div className="header-left-context">
-      <div className="search-logo-container">
-        <img
-          className="search-logo-img"
-          src="/images/headerSearchLogo.jpg"
-          alt="Header logo"
-        />
-      </div>
-      <div className="search-input-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search"
-        />
+      <div className="search-box">
+        <div className="image-container">
+          <img
+            className="search-logo"
+            src="/images/headerSearchLogo.jpg"
+            alt="search-logo"
+          />
+        </div>
+        <div className="search-input-container">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search"
+          />
+        </div>
       </div>
     </div>
     <div className="header-center-context">
-      <div className="two-col-box">
-        <div className="top-box">
-          <p>lzkmylz的个人博客</p>
-        </div>
-        <div className="bottom-box">
-          <p>Blog of lzkmylz</p>
-        </div>
+      <div className="title">
+        <p>lzkmylz的个人博客</p>
       </div>
     </div>
     <div className="header-right-context">
