@@ -4,6 +4,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
@@ -23,4 +24,12 @@ const AppRouter = () => (
   </BrowserRouter>
 );
 
-export default AppRouter;
+function App(store) {
+  return (
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
+  );
+}
+
+export default App;
