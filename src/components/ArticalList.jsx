@@ -1,7 +1,30 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import selectArticals from '../selectors/artical';
 
-const ArticalList = () => (
-  <div>ArticalList</div>
+export const ArticalList = props => (
+  <div>
+    {console.log(props)}
+    {
+      props.articals.length === 0 ? (
+        <div className="list-item list-item__message">
+          <p>No Articles</p>
+        </div>
+      ) : (props.articals.map(artical => (
+        <div>
+          <p>{artical.title}</p>
+          <p>{artical.summary}</p>
+          <p>{artical.createdAt}</p>
+          <p>{artical.id}</p>
+          <p>{artical.totalReaders}</p>
+        </div>
+      )))
+    }
+  </div>
 );
 
-export default ArticalList;
+const mapStateToProps = state => ({
+  articals: selectArticals(state.articals, state.filters),
+});
+
+export default connect(mapStateToProps)(ArticalList);

@@ -1,7 +1,11 @@
 import React from 'react';
+import ArticalList from './ArticalList';
 
 const ArticlesPage = () => (
-  <p>This is Articles Page.</p>
+  <div>
+    <p>This is Articles Page.</p>
+    <ArticalList />
+  </div>
 );
 
 export default ArticlesPage;

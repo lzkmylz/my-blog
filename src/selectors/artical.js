@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 export default (articals, {
-  text,
+  title,
   sortBy,
   startDate,
   endDate,
@@ -9,9 +9,9 @@ export default (articals, {
   const createdAtMoment = moment(artical.createdAt);
   const startDateMatch = startDate ? startDate.isSameOrBefore(createdAtMoment, 'day') : true;
   const endDateMatch = endDate ? endDate.isSameOrAfter(createdAtMoment, 'day') : true;
-  const textMatch = artical.description.toLowerCase().includes(text.toLowerCase());
+  const titleMatch = artical.title.toLowerCase().includes(title.toLowerCase());
 
-  return startDateMatch && endDateMatch && textMatch;
+  return startDateMatch && endDateMatch && titleMatch;
 }).sort((a, b) => {
   if (sortBy === 'date') {
     return a.createdAt < b.createdAt ? 1 : -1;

@@ -4,7 +4,10 @@
     "browser": true
   },
   "rules": {
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "import/no-named-as-default": 0,
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0
   },
   "plugins": [
     "jsx-a11y",

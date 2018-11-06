@@ -30,4 +30,5 @@ const articals = [{
 }];
 
 store.dispatch(setArticals(articals));
+console.log(store.getState());
 ReactDOM.render(AppRouter(store), document.getElementById('app'));

@@ -10,7 +10,7 @@ yarn add babel-plugin-transform-class-properties babel-plugin-transform-object-r
 设置.babelrc
 
 3、安装react
-yarn add react react-dom react-redux react-router-dom history react-router redux
+yarn add react react-dom react-redux react-router-dom history react-router redux prop-types
 
 4、安装webpack
 yarn add webpack webpack-cli webpack-dev-server

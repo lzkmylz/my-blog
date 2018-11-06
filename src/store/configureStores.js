@@ -1,10 +1,12 @@
 import { createStore, combineReducers } from 'redux';
 import articalReducer from '../reducers/articals';
+import filterReducer from '../reducers/filters';
 
 export default () => {
   const store = createStore(
     combineReducers({
-      artical: articalReducer,
+      articals: articalReducer,
+      filters: filterReducer,
     }),
   );
 
