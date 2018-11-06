@@ -21,7 +21,7 @@ const articalReducer = (state = articalReducerDefaultState, action) => {
         }
         return true;
       });
-    case 'SET_ARTICAL':
+    case 'SET_ARTICALS':
       return action.articals;
     default:
       return state;
