@@ -1,11 +1,11 @@
-import moment from 'moment';
+// import moment from 'moment';
 // FILTERS REDUSER
 
 const filterReduserDefaultState = {
   title: '',
   sortBy: 'date',
-  startDate: moment().startOf('month'),
-  endDate: moment().endOf('month'),
+  startDate: 0, // moment().startOf('month'),
+  endDate: 0, // moment().endOf('month'),
 };
 
 const filterReduser = (state = filterReduserDefaultState, action) => {

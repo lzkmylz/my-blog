@@ -4,14 +4,13 @@ import selectArticals from '../selectors/artical';
 
 export const ArticalList = props => (
   <div>
-    {console.log(props)}
     {
       props.articals.length === 0 ? (
         <div className="list-item list-item__message">
           <p>No Articles</p>
         </div>
       ) : (props.articals.map(artical => (
-        <div>
+        <div key={artical.id}>
           <p>{artical.title}</p>
           <p>{artical.summary}</p>
           <p>{artical.createdAt}</p>
