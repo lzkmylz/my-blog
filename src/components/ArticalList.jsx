@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import selectArticals from '../selectors/artical';
 
 export const ArticalList = props => (
-  <div>
+  <div className="artical-list-container">
     {
       props.articals.length === 0 ? (
         <div className="list-item list-item__message">
