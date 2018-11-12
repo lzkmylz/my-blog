@@ -1,35 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { DatePicker, Radio } from 'antd';
-import moment from 'moment';
-
-const { RangePicker } = DatePicker;
+import { Radio, Row, Col } from 'antd';
 
 class ArticalListFilter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      autoFocus: true,
-    };
-  }
-
   render() {
     return (
       <div className="artical-list-filter-container ant-col-24">
-        <Radio.Group defaultValue="a" buttonStyle="solid">
-          <Radio.Button value="a">Sort By Date</Radio.Button>
-          <Radio.Button value="a">Sort By Readers</Radio.Button>
-        </Radio.Group>
-        <RangePicker
-          autoFocus={this.state.autoFocus}
-          disabledDate={(current) => {
-            const max = moment().endOf('day');
-            if (current > max) {
-              return true;
-            }
-            return false;
-          }}
-        />
+        <Row type="flex" justify="center">
+          <Col>
+            <Radio.Group defaultValue="a" buttonStyle="solid" className="filter-selctor">
+              <Radio.Button value="a">Sort By Date</Radio.Button>
+              <Radio.Button value="b">Sort By Readers</Radio.Button>
+            </Radio.Group>
+          </Col>
+        </Row>
       </div>
     );
   }
